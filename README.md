@@ -13,7 +13,7 @@ It can be accessed via a web browser or the command line (e.g., using curl) (aut
 
 Visiting the URL with the port number to the server will display the stored content in plain text on the browser page (eg. visiting http://\<your-server-domain\>.com:30031 on the browser). 
 
-To update the stored content, append a special variable to the URL. Say if we want to change the content to be the text "NewContent", we can visit "http://\<your-server-domain\>.com:30031/stored-text=NewContent". The "stored-text" is the variable name here. The variable name can be customized by changing 'stored-text' on line 25 of server.js (app.get('/**stored-text**=:newText', (req, res) => {...})
+To update the stored content, append a special variable to the URL. Say if we want to change the content to be the text "NewContent", we can visit "http://\<your-server-domain\>.com:30031/stored-text=NewContent". The "stored-text" is the variable name here. For your security reasons, the variable name can be customized by changing 'stored-text' on line 25 of server.js (app.get('/**stored-text**=:newText', (req, res) => {...})
 
 ## How to use on command line
 
